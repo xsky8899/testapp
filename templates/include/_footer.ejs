@@ -1,0 +1,10 @@
+    <script src="<@= ctx @>libs/require.js"></script>
+    <script src="<@= ctx @>libs/config.js?v=<@= _build.ts @>"></script>
+    <script>
+        <@ if(data.main){ @>
+                require(["<@= data.main @>"])
+        <@ }else{ @>
+                require(["C"])
+        <@ } @>
+    </script>
+</html>

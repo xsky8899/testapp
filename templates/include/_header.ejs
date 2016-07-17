@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title><@= data.title @></title>
+    <link rel="stylesheet" href="<@= ctx @>css/h5.css?v=<@= _build.ts @>">
+    <script type="text/javascript">
+        var _H5 = {
+            ctx : "<@= ctx @>",
+            version:"<@= _build.version @>",
+            ts:"<@= _build.ts @>"
+        };
+        /*媒体查询*/
+		    !function(n,e){var t=n.documentElement,o="orientationchange"in window?"orientationchange":"resize",i=function(){var n=t.clientWidth;n&&(t.style.fontSize=n>540?Math.floor(72)+"px":Math.floor(100*(n/750))+"px")};n.addEventListener&&(e.addEventListener(o,i,!1),n.addEventListener("DOMContentLoaded",i,!1))}(document,window);
+    </script>
+</head>

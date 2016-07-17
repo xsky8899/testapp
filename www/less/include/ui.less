@@ -1,0 +1,194 @@
+.leayer{position: fixed;
+    width: 100%;top:0;
+    bottom:0;background: rgba(0,0,0,0.6);
+    z-index: 99;
+    overflow: hidden;
+    left: 0;
+}
+.dialog{
+    position: fixed;
+    left: 0.5rem;
+    right:0.5rem;
+    background: #fff;
+    border-radius: 8px;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+.close{
+    position: absolute;
+    width: .96rem;
+    height: .96rem;
+    text-align: center;
+    top:0;
+    right:0;
+    padding-top: .26rem;
+}
+.txt-vam{
+    min-height: 1.5rem;
+    font-size: .36rem;
+    color:#333;
+    line-height: .5rem;
+    text-align: center;
+    padding: 0 .4rem;
+}
+.txt-sm{
+    font-size: .3rem;
+    color:#333;
+    line-height: .5rem;
+    text-align: center;
+    padding: 0 .4rem;
+}
+.dialog .txt-vam{
+    margin-top: .7rem;
+}
+.dialog .d-t{
+    padding: .3rem .96rem .3rem .4rem;
+    font-size: .3rem;
+    line-height: .34rem;
+    color:#333;
+    border-bottom: 1px solid #dcdcdc;
+    text-align: center;
+}
+.dialog .d-c{
+    padding: 0 .4rem .5rem;
+}
+.dialog .d-b{
+    padding: .5rem .4rem .3rem;
+    background: #fafafa;
+    border-top: 1px solid #dcdcdc;
+}
+.pic-txt{
+    font-size: .36rem;
+    color:#333;
+    text-align: center;
+    padding: 1rem 0 .6rem;
+}
+.ceiling{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    text-align: center;
+    font-size: .3rem;
+    padding: .28rem .3rem;
+    background:rgba(255,255,255,.9);
+    z-index: 5;
+    line-height: .3rem;
+}
+.ceiling .num{
+    display: inline-block;
+    vertical-align: top;
+    min-width: .3rem;
+    height: .3rem;
+    border-radius: 15px;
+    background: #f60;
+    font-size: .24rem;
+    color:#fff;
+    padding: .02rem .08rem 0;
+}
+.tab{
+    display: -webkit-box;
+    text-align: center;
+    font-size: .3rem;
+    background: #fff;
+    padding: 0 .4rem;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 6;
+   // margin-bottom: .2rem;
+}
+.tab-con{
+    padding-top: 1.1rem;
+}
+.tab li{
+    -webkit-box-flex:1;
+    width: 100%;
+    position: relative;
+    padding: .2rem 0;
+    margin-left: .3rem;
+}
+.tab li:first-child{
+    margin-left: 0;
+}
+.tab li .span{
+    display: block;
+    /*width: 2rem;*/
+    height: .5rem;
+    text-align: center;
+    line-height: .48rem;
+    border-radius: 12px;
+    border:1px solid #fff;
+}
+.tab li.active{
+    color:#008cd6;
+}
+
+.tab li.active .span{
+    border:1px solid #008cd6;
+}
+
+.switch{
+    display: block;
+    width: 1.06rem;
+    height:0.6rem;
+    border-radius: 20px;
+}
+.mui-switch{
+    width: 1.04rem;
+    height:0.6rem;
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid #dfdfdf;
+    background-color: #fdfdfd;
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    vertical-align: top;
+}
+.mui-switch:before {
+    content: '';
+    width: 0.56rem;
+    height: 0.56rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.mui-switch:checked {
+    border-color: #4cd964;
+    box-shadow: #4cd964 0 0 0 16px inset;
+    background-color: #4cd964;
+}
+.mui-switch:checked:before {left: 0.42rem; }
+.mui-switch.mui-switch-animbg {
+    transition: background-color ease 0.4s;
+}
+.mui-switch.mui-switch-animbg:before {
+    transition: left 0.3s;
+}
+.mui-switch.mui-switch-animbg:checked {
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    background-color: #eb6100;
+    transition: border-color 0.4s, background-color ease 0.4s;
+}
+.mui-switch.mui-switch-animbg:checked:before {
+    transition: left 0.3s;
+}
+.mui-switch.mui-switch-anim {
+    transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s;
+}
+.mui-switch.mui-switch-anim:before {
+    transition: left 0.3s;
+}
+.mui-switch.mui-switch-anim:checked {
+    box-shadow: #64bd63 0 0 0 16px inset;
+    background-color: #64bd63;
+    transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s;
+}
+.mui-switch.mui-switch-anim:checked:before {
+    transition: left 0.3s;
+}
